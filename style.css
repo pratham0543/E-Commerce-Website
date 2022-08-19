@@ -23,12 +23,18 @@
 }
 .logo img{
     padding: 10px;
+    margin-left: 30px;
 }
-
+.logo a + h2{
+    font-family: cosmic,sans-serif;
+    display: inline-block;
+    position: relative;
+    bottom: 40%;
+}
 .nav_side{
     float: right;
     width: 40%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .nav_side a{
     text-decoration: none;
@@ -45,4 +51,67 @@
     color: orange;
   
     transition:all 1s ease ;    
+}
+
+
+.main{
+    background: url(./ecommerce.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    background-color: rgba(0,0,0,.15);
+}
+
+.main .main-content{
+    padding-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+}
+.main .main-content h2{
+    font-family:cosmic,sans-serif; 
+    font-weight: bolder;
+    text-align: center;
+    color:white ;
+    font-size: 50px;
+    line-height: 20px;
+}
+.main .main-content h2 span{
+    font-size: 15px;
+    opacity: 0.8;
+    font-weight:bolder ;
+    line-height: 15px;
+    color:#000000d1;
+}
+.main .main-content .btn{
+    margin-top: 50px;   
+    text-align: center;
+}
+.main .main-content .btn a{
+    text-decoration: none;
+    margin:50px;
+    padding:10px 20px;
+    background-color: #4A148C;
+    color:white;
+    font-family: cosmic,sans-serif;
+    border:2px solid white;
+    border-radius: 10px;
+
+}
+.main .main-content .btn a:hover{
+    background-color:#000000d1 ;
+    border:none;
+    border-bottom:4px solid white;
+    transition: 0.5s;
+}
+/* Products */
+
+.product h2{
+    font-size:35px;
+    text-align: center;
+    padding:20px;
+    font-family:cosmic,sans-serif
 }
