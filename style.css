@@ -390,10 +390,34 @@
     line-height: 20px;
 }
 
+.contact_container{
+    padding: 100px;
+}
+.contact_container h2{
+    font-size:35px;
+    text-align: center;
+    padding:10px;
+    font-family:cosmic,sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 
-
-
-
+.contact_container .g_map{
+    border:4px solid #A67CFE;
+    
+}
+.contact_container .g_map iframe{
+    width: 100%;
+}
+.contact_container .contact_content{
+    padding: 20px;
+}
+.contact_container .contact_content p{
+    padding: 10px;
+    font-size:15px;
+    font-family: cosmic,sans-serif;
+    line-height: 20px;
+}
 
 
 /* footer */
