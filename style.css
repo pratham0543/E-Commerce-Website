@@ -292,3 +292,118 @@
     font-size:15px;
     font-family: cosmic,sans-serif;
 }
+
+/* about team */
+.team{
+    padding: 50px;
+}
+.team h2{
+    font-size:35px;
+    text-align: center;
+    padding:10px;
+    font-family:cosmic,sans-serif
+}
+.team .team_container{
+    display: flex;
+}
+.team .team_container .team_video{
+    width: 50%;
+    padding: 20px;
+}
+.team .team_container .team_video iframe{
+    width: 100%;
+    outline: none;
+    border:10px solid  #A67CFE;
+}
+.team .team_container .team_content{
+    width: 40%;
+    padding: 20px;
+    margin-left:50px;
+}
+.team .team_container .team_content p{
+    padding: 10px;
+    font-size:15px;
+    font-family: cosmic,sans-serif;
+}
+
+
+
+/* footer */
+footer{
+    background-color: #A67CFE;
+    color: #0A0911;
+    padding: 50px;
+}
+
+footer .pages{
+    text-align: center;
+
+}
+footer .pages h3{
+    font-size: 20px;
+    font-family: cosmic,sans-serif;
+    padding: 5px;
+}
+footer .pages a{
+    text-decoration: none;
+    margin:10px;
+    font-family: cosmic,sans-serif;
+    color: #0A0911;
+}
+footer .pages a:hover{
+    color: white;
+}
+
+footer .doc{
+    text-align: center;
+
+}
+footer .doc h3{
+    font-size: 20px;
+    font-family: cosmic,sans-serif;
+    padding: 5px;
+}
+footer .doc a{
+    text-decoration: none;
+    margin:10px;
+    font-family: cosmic,sans-serif;
+    color: #0A0911;
+}
+footer .doc a:hover{
+    color: white;
+}
+footer .social{
+    text-align: center;
+
+}
+footer .social h3{
+    font-size: 20px;
+    font-family: cosmic,sans-serif;
+    padding: 5px;
+}
+footer .contact{
+    text-align: center;
+
+}
+footer .contact h3{
+    font-size: 20px;
+    font-family: cosmic,sans-serif;
+    padding: 5px;
+}
+footer .contact a{
+    color: #0A0911;
+    font-size: 30px;
+    margin: 10px;
+}
+footer .contact a:hover{
+    color: white;
+}
+
+footer .social a{
+    color: #0A0911;
+    font-size: 30px;
+    margin: 10px;
+}
+footer .social a:hover{
+    color: white;
+}
