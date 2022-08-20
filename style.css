@@ -123,10 +123,11 @@
     display: flex;
     margin-left:5%;
     margin-right: 5%;
+    flex-wrap: wrap;
 
 }
 .product .product_container .item{
-    width: 33.33%;
+    width: 31%;
     margin:10px;
     height:auto;
 }
@@ -389,7 +390,7 @@
     font-family: cosmic,sans-serif;
     line-height: 20px;
 }
-
+/* Contact us page */
 .contact_container{
     padding: 100px;
 }
