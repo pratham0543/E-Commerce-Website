@@ -368,13 +368,46 @@
 }
 
 
+/* About us page */
+
+.about_us{
+    padding:100px;
+}
+
+.about_us h2{
+    font-size:35px;
+    text-align: center;
+    padding:10px;
+    font-family:cosmic,sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.about_us p{
+    padding: 10px;
+    font-size:15px;
+    text-align: center;
+    font-family: cosmic,sans-serif;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
 /* footer */
 footer{
     background-color: #A67CFE;
     color: #0A0911;
     padding: 50px;
 }
-
+.footer_logo a + h2{
+    font-family: cosmic,sans-serif;
+    display: inline-block;
+    position: relative;
+  
+}
 footer .pages{
     text-align: center;
 
@@ -440,6 +473,7 @@ footer .contact a:hover{
 }
 
 footer .social a{
+
     color: #0A0911;
     font-size: 30px;
     margin: 10px;
