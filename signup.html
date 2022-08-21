@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <title>E-Commerce Website | Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4de2e254fb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,33 +24,17 @@
             <a href="./signup.html ">Login/Register</a>
         </div>
     </nav>
-
-    <div class="about_us">
-        <h2>About Us</h2>
-        <div class="about_content">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo laborum aliquam ratione optio molestiae impedit cumque deleniti ut voluptas at.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, hic. Aperiam, neque, quis suscipit animi at nesciunt porro quas veniam, molestiae sequi hic quia exercitationem nostrum impedit earum? A, suscipit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium culpa asperiores! Molestiae autem ad suscipit atque inventore. Voluptatem, ratione.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quos itaque adipisci rem nesciunt esse corporis quaerat unde cupiditate, quo earum nostrum, culpa saepe? Commodi?
-            </p>
-        </div>
-        <hr>
-        <h2>Our Mission</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum facilis sequi consequuntur. Ullam, error laboriosam illo ipsam animi eveniet dolores 
-        laudantium quas itaque, vero quidem quis aut qu
-        ia quod quisquam totam. Amet fugiat recusandae asperiores 
-        accusamus praesentium quas est aspernatur officia dignissimos cumque vero unde, neque tempora. Dolorum, nulla!</p>
-    </div>
-    <div class="feed">
-        <h2>WRITE A REVIEW</h2>
+<!-- This becomes sign up form -->
+    <div class="feed mt-5 ">
+        <h2>SIGN UP</h2>
         <div class="feed_form">
             <form name="feedback_form" >
                 <input type="text" name="Name" id="" placeholder="Name" class="form-control" required><br>
                 <input type="email" name="Email" id="" placeholder="Email Id" class="form-control" required><br>
-                <input type="number" name="Number" id="" placeholder="Contact Number" class="form-control" required><br>
-                <textarea placeholder="Write your review" name="Review" rows="5" cols="7" class="form-control" required></textarea><br>
-                <button type="submit">Submit</button>
+                <input type="password" name="Number" id="" placeholder="Password" class="form-control" required><br>
+                <button type="submit" >Submit</button>
             </form>
+            <p>Already a customer? <a href="./login.html">Sign In</a></p>
         </div>
     </div>
     
@@ -65,8 +48,8 @@
             <a href="./about.html">About Us</a>|
             <a href="./service.html">Sevices</a>|
             <a href="./blog.html">Blogs</a>|
-            <a href="./login.html">Login</a>|
-            <a href="./signup.html">Sign Up</a>
+            <a href="login.html">Login</a>|
+            <a href="signup.html">Sign Up</a>
         </div>
         <div class="doc">
             <h3>Documents</h3>
@@ -100,9 +83,13 @@
         form.addEventListener('submit',e=>{
             e.preventDefault();
             fetch(scriptUrl,{method:'POST',body:new FormData(form)})
-            .then(response => alert('Thanks for your valuable feedback'))
+            .then(response => alert('Thank you for registring with us'))
             .catch(error=>console.log('Error',error.message))
         })
+
+
+
+
     </script>
 </body>
 </html>
