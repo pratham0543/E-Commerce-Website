@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4de2e254fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav nav_top">
+        <div class="logo">
+           <a href="./index.html"><img src="./logo.png" width="80" ></a>
+           <h2>E-Commerce Website</h2>
+        </div>
+        <div class="nav_side">
+            <a href="./about.html">About Us</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+            <a href=" ">Login/Register</a>
+        </div>
+    </nav>
+<!-- Blogs section -->
+
+<div id="blogs">
+    <h2 class="blog_heading">BLOGS</h2> 
+    <div id="blogs-container" class="blogs-container">
+      <!-- All blogs in javascript -->
+    </div>
+  </div>
+
+    <div class="feed">
+        <h2>WRITE A REVIEW</h2>
+        <div class="feed_form">
+            <form name="feedback_form" >
+                <input type="text" name="Name" id="" placeholder="Name" class="form-control" required><br>
+                <input type="email" name="Email" id="" placeholder="Email Id" class="form-control" required><br>
+                <input type="number" name="Number" id="" placeholder="Contact Number" class="form-control" required><br>
+                <textarea placeholder="Write your review" name="Review" rows="5" cols="7" class="form-control" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer_logo">
+            <a href="./index.html"><img src="./logo.png" width="80" ></a>
+            <h2>E-Commerce Website | About Us</h2>
+         </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="./about.html">About Us</a>|
+            <a href="./service.html">Sevices</a>|
+            <a href="./blog.html">Blogs</a>|
+            <a href="">Login</a>|
+            <a href="">Sign Up</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a>|
+            <a href=""">Terms of Use</a>|
+            <a href="">Refund Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a target="_blank" href="https://www.facebook.com/pages/category/Education-website/1Stopai-102490171820303/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a target="_blank" href="https://in.linkedin.com/company/1stop-ai"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://www.instagram.com/1stop.ai/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+           
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a target="_blank" href="https:://api.whatsapp.com/send?phone=+919876543210  "><i class="fa-brands fa-whatsapp"></i></a>
+            <a  href="tel: +919876543210"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:support@1stop.ai"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2022 1Stop. All rights reserved </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script>
+        const scriptUrl=`https://script.google.com/macros/s/AKfycbxQQOucpr-a0I1jpYIayuJPREnY8l9Dn35L0Zc9GdHNx43UYmNNghFAT8KL6YtGfXbX_Q/exec`;
+
+        const form=document.forms['feedback_form'];
+        form.addEventListener('submit',e=>{
+            e.preventDefault();
+            fetch(scriptUrl,{method:'POST',body:new FormData(form)})
+            .then(response => alert('Thanks for your valuable feedback'))
+            .catch(error=>console.log('Error',error.message))
+        })
+
+
+
+const albums=["Enterpenurship",'Stocks','Digital Marketing','Cryptocurrency','bitcoins','sales','product','lorem','ipsum','doler mat'];
+const xhr=new XMLHttpRequest();
+const url=`https://jsonplaceholder.typicode.com/photos?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-09`;
+
+xhr.open('GET',url);
+var response;
+
+
+xhr.onreadystatechange=()=>
+{
+
+// function to setBlogCategory
+const setBlogCategories=()=>{
+    const categories=document.querySelectorAll('.blog-categories');
+    for(let i=0;i<6;i++){
+        const blogId=Math.floor(Math.random()*albums.length);
+        categories[i].innerHTML=albums[blogId].charAt(0).toUpperCase() + albums[blogId].slice(1);
+    }
+}
+    if(xhr.readyState===4 && xhr.status===200){
+         response=JSON.parse(xhr.responseText);
+
+    var blog=``;
+
+            for(let i=0;i<6;i++)
+            {
+                blog+=`
+                <div class="card mb-3">
+                <img src=${response[i].thumbnailUrl} class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-uppercase">${response[i].title}</h5>
+                  <p class="card-text card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia sed ex similique neque cumque reprehenderit eum ipsa nihil
+                   quos quae modi unde blanditiis voluptates, consequatur explicabo quas a temporibus.</p>
+                  <p class="card-text"><small class="text-muted">Author:John Doe | Category:<span class='blog-categories'>Technologies</span> </small></p>
+                </div>
+              </div>
+
+                
+                
+                `;
+            }
+
+            document.querySelector('.blogs-container').innerHTML=blog;
+           setBlogCategories();
+           
+             
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        }
+        //End of ajax code
+        
+
+}
+
+xhr.send();
+
+
+    </script>
+</body>
+</html>

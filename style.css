@@ -419,7 +419,43 @@
     font-family: cosmic,sans-serif;
     line-height: 20px;
 }
+#blogs{
+    padding: 100px;
+    margin-top:10px;
+}
+.blogs-container{
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#blogs .blog_heading{
+    font-size:35px;
+    text-align: center;
+    padding:10px;
+    font-family:cosmic,sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 
+.card{
+    width:40%;
+}
+.card img{
+    width: 100%;
+    height:15rem ;
+    object-fit: cover;
+    
+}
+.card .card-body .card_text{
+    padding: 10px;
+    font-size:15px;
+    text-align: center;
+    font-family: cosmic,sans-serif;
+    line-height: 20px;
+}
 
 /* footer */
 footer{
